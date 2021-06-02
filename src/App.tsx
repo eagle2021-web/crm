@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC } from 'react';
+import { Button } from 'antd';
+import { DownloadOutlined } from '@ant-design/icons';
+import { PoweroffOutlined } from '@ant-design/icons';
+import 'antd/dist/antd.css';
+import './sytles/app.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: FC = () => (
+  <div className="App" >
+      <Button type="default" size={"small"} color={"#555555"} >Pri</Button>
+      <Button>Default Button</Button>
+      <Button type="dashed">Dashed Button</Button>
+      <br />
+      <Button type="text">Text Button</Button>
+      <Button type="link">Link Button</Button>
+      <Button type="primary" shape="circle" icon={<DownloadOutlined />}/>
+      <Button type="primary" icon={<PoweroffOutlined />} loading />
+  </div>
+);
 
 export default App;

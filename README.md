@@ -44,3 +44,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+2、安装我们项目需要的样式依赖，这个项目我用的是scss
+npm install node-sass -D
+3、安装typescript的依赖命令
+npm install typescript @types/node @types/react @types/react-dom @types/jest
+4、安装sass-loader和node-sass依赖
+npm install sass-loader node-sass --save-de
