@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './sytles/index.scss';
-import App from './App';
+import Login from "./login";
 import reportWebVitals from './reportWebVitals';
-
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Login/>,
   </React.StrictMode>,
   document.getElementById('root')
 );
