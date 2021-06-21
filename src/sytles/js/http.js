@@ -17,7 +17,7 @@ let env = process.env.NODE_ENV;
 console.log(env);
 switch (env) {
     case 'development':
-        axios.defaults.baseURL = "http://localhost:8082/demo06_war_exploded/json/getJson";
+        axios.defaults.baseURL = "http://localhost:8080/user/all";
         break;
     case 'production':
         axios.defaults.baseURL = "";

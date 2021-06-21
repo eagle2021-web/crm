@@ -41,6 +41,7 @@ class Login extends React.Component<Props>{
     };
 
     handleClick = () =>{
+        console.log(md5("123456"));
         let account = null,
             password = null;
         if(this.x.value && this.y.value){
@@ -54,7 +55,7 @@ class Login extends React.Component<Props>{
                 if(response != null){
                     console.log(response);
                     // alert("登录成功！点击确认跳转！")
-                    window.location.href = "/login"
+                    // window.location.href = "/login"
                 }else{
                     alert("账户或密码不正确！")
                 }

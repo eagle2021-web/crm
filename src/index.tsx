@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './sytles/index.scss';
-import Login from "./login";
+// import './sytles/index.scss';
+// import Login from "./login";
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import reportWebVitals from './reportWebVitals';
+import Slider_1 from "./myAntd/Slider_1";
 ReactDOM.render(
   <React.StrictMode>
-      <Login/>,
+      {/*<Login/>,*/}
+      <Slider_1/>66df 62dsafadsf655111111111155555
   </React.StrictMode>,
   document.getElementById('root')
 );
